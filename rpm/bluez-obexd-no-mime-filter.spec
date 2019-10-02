@@ -21,13 +21,15 @@ Requires:      bluez-
 %build
 
 %preinst
-if [ -x /usr/libexec/obexd-contentfilter-helperapp ]
+if [ ! -f /usr/libexec/obexd-contentfilter-helperapp ]
 then
+  exit 1
+elif [ -x /usr/libexec/obexd-contentfilter-helperapp ] && [ ! -h /usr/libexec/obexd-contentfilter-helperapp ] && true
   if [ "$(wc -c /usr/libexec/obexd-contentfilter-helperapp)" -ge "30" ]
   then mv /usr/libexec/obexd-contentfilter-helperapp /usr/libexec/obexd-contentfilter-helperapp.orig
   fi
 else
-  exit 1
+  
 fi
 
 %install
