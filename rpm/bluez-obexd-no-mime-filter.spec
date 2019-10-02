@@ -22,13 +22,20 @@ Requires:      bluez-
 
 %preinst
 if [ -x /usr/libexec/obexd-contentfilter-helperapp ]
-then 
-  mv .orig
-  echo
+then
+  if [ "$(wc -c /usr/libexec/obexd-contentfilter-helperapp)" -ge "30" ]
+  then mv /usr/libexec/obexd-contentfilter-helperapp /usr/libexec/obexd-contentfilter-helperapp.orig
+  fi
 else
   exit 1
 fi
 
 %install
+mkdir -p %{buildroot}%{_libexecdir}
+cp usr/libexec/* %{buildroot}%{_libexecdir}/
+
+%files
+%defattr(-,root,root,-)
+%{_libexecdir}/obexd-no-mime-filter
 
 %postun
