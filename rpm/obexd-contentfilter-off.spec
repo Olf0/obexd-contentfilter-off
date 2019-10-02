@@ -22,9 +22,10 @@ Conflicts:     obexd-contentfilter-helper
 %build
 
 %install
-mkdir -p %{buildroot}/usr/libexec
-cp usr/libexec/* %{buildroot}/usr/libexec/
+mkdir -p %{buildroot}%{_libexecdir}
+cp usr/libexec/* %{buildroot}%{_libexecdir}/
 
 %files
 %defattr(-,root,root,-)
-/usr/libexec/obexd-contentfilter-helperapp
+%{_libexecdir}/obexd-contentfilter-helperapp
+
