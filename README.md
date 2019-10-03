@@ -1,5 +1,5 @@
 # obexd-contentfilter-off
-### Disable filter for known MIME types when transferring files per OBEX with bluez<br />
+### Disable filter for supported MIME types when transferring files per OBEX with bluez<br />
 
 SailfishOS and MeeGo use *bluez*, *obexd* and the RPM *obexd-contentfilter-helper*.  This package provides a single file, *obexd-contentfilter-helperapp*, which is usually installed in */usr/libexec*.  *obexd-contentfilter-helperapp* is a shell script (as of v0.0.2), which checks per *lca-tool* if the MIME type of a file is registered (i.e., has a handler), when called as */usr/libexec/obexd-contentfilter-helperapp --receive-file <filepath>* (as usual, it exits with 0 for success and 1 if any failure occurred).
 
@@ -8,7 +8,7 @@ But luckily what triggers the installation of the *obexd-contentfilter-helper* R
 
 As adapting or altering the *obexd-contentfilter-helper* RPM or its contents (specifically the *obexd-contentfilter-helperapp* script) is out of scope due to their licensing, the *obexd-contentfilter-off* RPM simply replaces its counterpart and provides a dummy *obexd-contentfilter-helperapp* script, which always returns success.
 
-Hence *obexd-contentfilter-off* provides a simple way to disable the filtering for supported MIME types when transferring (receiving) files per Bluetooth via the OBEX profile.<br />
+Hence *obexd-contentfilter-off* provides a simple way to disable the filtering for registered MIME types only, when transferring (receiving) files per Bluetooth via the OBEX profile.<br />
 For easy installation, an RPM built for SailfishOS is available at [OpenRepos](https://openrepos.net/content/olf/obexd-contentfilter).
 
 #### Background:
