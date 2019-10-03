@@ -3,7 +3,7 @@ Summary:       Disable filter for known MIME types when transferring files per O
 Version:       0.1
 Release:       1
 Group:         System/Base
-Distribution:  SailfishOS
+# Distribution: SailfishOS # , maybe other descendants of MeeGo and MeeGo itself
 Vendor:        olf
 Packager:      olf
 License:       MIT
