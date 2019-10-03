@@ -8,10 +8,10 @@ But luckily what triggers the installation of the *obexd-contentfilter-helper* R
 
 As adapting or altering the *obexd-contentfilter-helper* RPM or its contents (specifically the *obexd-contentfilter-helperapp* script) is out of scope due to their licensing, the *obexd-contentfilter-off* RPM simply replaces its counterpart and provides a dummy *obexd-contentfilter-helperapp* script, which always returns success.
 
-Hence *obexd-contentfilter-off* provides a simple way to disable the filtering for supported MIME types when transferring (receiving) files per Bluetooth via the OBEX profile.
+Hence *obexd-contentfilter-off* provides a simple way to disable the filtering for supported MIME types when transferring (receiving) files per Bluetooth via the OBEX profile.<br />
+For easy installation, an RPM built for SailfishOS is available at [OpenRepos](https://openrepos.net/content/olf/obexd-contentfilter).
 
 #### Background:
-
 * The purpose of the original *obexd-contentfilter-helper(app)* presumably is to strictly adhere to the OBEX specification in MeeGo and subsequently in SailfishOS.  The idea is to never let pure GUI users receive files per Bluetooth, which cannot be processed on the device.  But this behaviour is contrary to most other file transfer methods and falls short, as e.g. most TUI ("shell") programs do not register MIME types of files they can process.<br />
 The main argument from the manufacturers perspective was, "BT SIG qualification for Obex push requires that unsupported content is rejected, regardless of whether we want to let everything through or not."  Actually the OBEX aka [IrDA Interoperability](https://www.bluetooth.com/specifications/protocol-specifications/) specification (v2.0, 2010-08-26) does not require this, but the *Bluetooth Generic Object Exchange Profile Specification* or a *Bluetooth Application Profile* mentioned in section *1.2 Bluetooth OBEX-Related Specifications* may (these do not seem to be public).
 * The deliberate filtering for supported MIME types has sparked heated dicussions at TJC ([[1]](https://together.jolla.com/question/1302/bluetooth-file-transfer-for-all-file-types/), [[2]](https://together.jolla.com/question/55104/sending-files-from-pc-to-jolla-by-bluetooth-is-extension-dependent/?answer=56832#post-id-56832)), because users expect arbitrary files to be easily transferred as on their PCs.<br />
