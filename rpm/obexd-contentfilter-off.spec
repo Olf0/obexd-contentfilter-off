@@ -10,6 +10,7 @@ License:       MIT
 URL:           https://github.com/Olf0/%{name}
 Source:        https://github.com/Olf0/%{name}/archive/%{version}-%{release}/%{name}-%{version}-%{release}.tar.gz
 BuildArch:     noarch
+Provides:      obexd-contentfilter-helper
 Obsoletes:     obexd-contentfilter-helper
 Conflicts:     obexd-contentfilter-helper
 
