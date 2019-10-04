@@ -8,7 +8,7 @@ But luckily what triggers the installation of the *obexd-contentfilter-helper* R
 
 As adapting or altering the *obexd-contentfilter-helper* RPM or its contents (specifically the *obexd-contentfilter-helperapp* script) is out of scope due to their licensing, the *obexd-contentfilter-off* RPM simply replaces its counterpart and provides a dummy *obexd-contentfilter-helperapp* script, which always returns success.
 
-Hence *obexd-contentfilter-off* provides a simple way to disable the filtering for registered MIME types only, when receiving files per Bluetooth via the OBEX profile.<br />
+Hence *obexd-contentfilter-off* provides a simple way to disable the filter for only registered MIME types, when receiving files per Bluetooth via the OBEX profile.<br />
 For easy installation, an RPM is [available at OpenRepos](https://openrepos.net/content/obexdcontentfilterolf/bluetooth-obex-filter).
 
 #### Background:
