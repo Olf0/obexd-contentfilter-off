@@ -1,7 +1,7 @@
 Name:          obexd-contentfilter-off
 Summary:       Disable filter for supported MIME types when receiving files per OBEX with bluez
-Version:       0.1
-Release:       4
+Version:       1.0
+Release:       1
 Group:         System/Base
 # Distribution: SailfishOS # , MeeGo and maybe also other descendants of MeeGo
 Vendor:        olf
