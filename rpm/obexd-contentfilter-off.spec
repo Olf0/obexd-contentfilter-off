@@ -1,5 +1,5 @@
 Name:          obexd-contentfilter-off
-Summary:       Disable filter for supported MIME types when transferring files per OBEX with bluez
+Summary:       Disable filter for supported MIME types when receiving files per OBEX with bluez
 Version:       0.1
 Release:       3
 Group:         System/Base
