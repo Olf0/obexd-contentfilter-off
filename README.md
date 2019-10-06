@@ -13,7 +13,7 @@ Hence *obexd-contentfilter-off* provides a simple way to disable the filter for 
 #### Notes
 * For easy installation, RPMs are available [in the release section](https://github.com/Olf0/obexd-contentfilter-off/releases) and [at OpenRepos](https://openrepos.net/content/obexdcontentfilterolf/bluetooth-obex-filter).
 * *obexd-contentfilter-off* should install and work fine on all SailfishOS and even MeeGo releases.
-* To restore the original behaviour and state, uninstall this package, also remove or disable [its repository](https://openrepos.net/user/14387/programs), if you have enabled it, finally reinstall the original package, e.g. by executing (must be root for that since SailfishOS 2.2.0): `pkcon install obexd-contentfilter-helper`
+* To restore the original behaviour and state, uninstall this package, and also remove or disable [its repository](https://openrepos.net/user/14387/programs) if you have enabled it.  Finally reinstall the original package, e.g. by executing (must be root for that since SailfishOS 2.2.0) `pkcon install obexd-contentfilter-helper`.
 * A coarse changelog is provided per [release comments](https://github.com/Olf0/obexd-contentfilter-off/releases).
 
 #### Background
