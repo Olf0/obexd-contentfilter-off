@@ -1,14 +1,14 @@
 Name:          obexd-contentfilter-off
 Summary:       Disable filter for supported MIME types when receiving files per OBEX with bluez
 Version:       1.0
-Release:       1
+# Release:      1  # The release number is not used, changes to the spec file bump the bug fix release number (third field)
 Group:         System/Base
 # Distribution: SailfishOS # , MeeGo and maybe also other descendants of MeeGo
 Vendor:        olf
 Packager:      olf
 License:       MIT
 URL:           https://github.com/Olf0/%{name}
-Source:        https://github.com/Olf0/%{name}/archive/%{version}-%{release}/%{name}-%{version}-%{release}.tar.gz
+Source:        https://github.com/Olf0/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 BuildArch:     noarch
 Provides:      obexd-contentfilter-helper
 # Obsoleting a vendor supplied system package (i.e., from a mandatory repository) is best
@@ -23,7 +23,7 @@ Conflicts:     obexd-contentfilter-helper
 %{summary} by substituting ("obsoleting") MeeGo's and SailfishOS' obexd-contentfilter-helper package, replacing its obexd-contentfilter-helperapp script with a "dummy".
 
 %prep
-%setup -n %{name}-%{version}-%{release}
+%setup -n %{name}-%{version}
 
 %build
 
