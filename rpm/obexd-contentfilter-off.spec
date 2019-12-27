@@ -1,6 +1,6 @@
 Name:          obexd-contentfilter-off
 Summary:       Disable filter for supported MIME types when receiving files per OBEX with bluez
-Version:       1.1.0
+Version:       1.1.1
 # Stop evaluating the "Release:" field (per %{release}) and cease including it in git tags since v1.1.0, 
 # in order to satisfy OBS and consequently switching to a three field semantic versioning scheme for
 # releases and their git tags.
@@ -30,7 +30,7 @@ Conflicts:     obexd-contentfilter-helper
 %{summary} by substituting ("obsoleting") MeeGo's and SailfishOS' obexd-contentfilter-helper package, replacing its obexd-contentfilter-helperapp script with a "dummy".
 
 %prep
-%setup -n %{name}-%{version}
+%setup
 
 %build
 
