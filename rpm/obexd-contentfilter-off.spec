@@ -19,7 +19,7 @@ Source:        https://github.com/Olf0/%{name}/archive/%{version}/%{name}-%{vers
 # rpmbuild (as of v4.14.1) handles the Icon tag awkwardly and in contrast to the Source tag(s):
 # It only accepts a GIF or XPM file (successfully tested GIF89a and XPMv3) in the SOURCE directory
 # (but not in the tarball)!  Hence only to be used, when the file is put there:
-# Icon:         kdebluetooth.128x128.gif
+# Icon:         kdebluetooth.256x256.gif
 BuildArch:     noarch
 Provides:      obexd-contentfilter-helper
 # Obsoleting a vendor supplied system package (i.e., from a mandatory repository) is best
