@@ -21,7 +21,7 @@ Source:        https://github.com/Olf0/%{name}/archive/%{version}/%{name}-%{vers
 # an XPM icon results in bad visual quality and large file size) rooted in the SOURCE directory
 # (but not in the tarball)!
 # Hence only to be used, when the file is put there:
-#Icon:          Icons/kdebluetooth.256x256.gif
+#Icon:          kdebluetooth.256x256.gif
 BuildArch:     noarch
 Provides:      obexd-contentfilter-helper
 # Obsoleting a vendor supplied system package (i.e., from a mandatory repository) is best
