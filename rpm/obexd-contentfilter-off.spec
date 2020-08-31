@@ -20,7 +20,7 @@ Source:        https://github.com/Olf0/%{name}/archive/%{version}/%{name}-%{vers
 # It only accepts a file path to a GIF or XPM file (successfully tested GIF89a and XPMv3) rooted
 # in the SOURCE directory (but not in the tarball)!
 # Hence only to be used, when the file is put there:
-# Icon:         kdebluetooth.256x256.gif
+# Icon:         Icons/kdebluetooth.256x256.gif
 BuildArch:     noarch
 Provides:      obexd-contentfilter-helper
 # Obsoleting a vendor supplied system package (i.e., from a mandatory repository) is best
