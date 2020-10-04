@@ -11,7 +11,7 @@ Version:       1.1.7
 Release:       stable
 Group:         System/Base
 # Distribution: SailfishOS # , MeeGo and maybe also other descendants of MeeGo
-Vendor:        olf
+Vendor:        meego
 Packager:      olf
 License:       MIT
 URL:           https://github.com/Olf0/%{name}
