@@ -33,7 +33,7 @@ Obsoletes:     obexd-contentfilter-helper
 Conflicts:     obexd-contentfilter-helper
 
 %description
-%{summary} by substituting ("obsoleting") MeeGo's and SailfishOS' obexd-contentfilter-helper package, replacing its obexd-contentfilter-helperapp script with a "dummy".
+%{summary} by substituting ("obsoleting") MeeGo's / SailfishOS' obexd-contentfilter-helper package, replacing its obexd-contentfilter-helperapp script with a "dummy".
 
 %prep
 %setup
