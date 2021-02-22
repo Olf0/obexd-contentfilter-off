@@ -29,6 +29,9 @@ Provides:      obexd-contentfilter-helper
 # in installing obexd-contentfilter-off automatically when upgrading the operating system.
 # Thus enabling the repository which hosts obexd-contentfilter-off becomes equivalent to
 # installing obexd-contentfilter-off (sooner or later)!
+# This is alleviated by an enhancment of SailfishOS' GUI upgrade utility in SailfisOS 3.4.0:
+# An OS upgrade at the GUI on SFOS 3.4.0+ will (unconditionally?) delete / disable / "isolate" (?)
+# enabled repositories with RPMs which replace(d ?) "system RPMs" (i.e., those provided by Jolla).
 Obsoletes:     obexd-contentfilter-helper
 Conflicts:     obexd-contentfilter-helper
 
