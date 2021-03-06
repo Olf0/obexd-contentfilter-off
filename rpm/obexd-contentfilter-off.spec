@@ -6,7 +6,7 @@ Version:       1.1.8
 # releases and their git tags.
 # Hence any changes to the spec file now always trigger an increase of the bug fix release number, i.e.
 # the third field of the Version.
-# But the Release tag is now (ab)used to merely indicate the estimated release quality by setting it
+# The Release tag is now (ab)used to merely indicate the estimated release quality by setting it
 # to {alpha, beta, stable}.  Note that no other identifiers shall be used.
 Release:       stable
 Group:         System/Base
