@@ -13,7 +13,7 @@ Group:         System/Base
 # Distribution: SailfishOS # , MeeGo and maybe also other descendants of MeeGo
 Vendor:        meego
 Packager:      olf
-License:       MIT
+License:       LGPL-2.1-only
 URL:           https://github.com/Olf0/%{name}
 Source:        https://github.com/Olf0/%{name}/archive/%{version}/%{name}-%{version}.tar.gz
 # rpmbuild (as of v4.14.1) handles the Icon tag awkwardly and in contrast to the Source tag(s):
