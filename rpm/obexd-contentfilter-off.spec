@@ -10,7 +10,7 @@ Version:       1.1.9
 # to {alpha,beta,rc,stable}.  Note that no other identifiers shall be used.
 Release:       stable
 Group:         System/Base
-# Distribution: SailfishOS # , MeeGo and maybe also other descendants of MeeGo
+# Distribution: SailfishOS  # , MeeGo and maybe also other descendants of MeeGo
 Vendor:        meego
 Packager:      olf
 License:       LGPL-2.1-only
