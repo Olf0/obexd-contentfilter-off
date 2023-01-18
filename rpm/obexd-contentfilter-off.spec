@@ -1,5 +1,5 @@
 Name:          obexd-contentfilter-off
-Summary:       Disable filter for supported MIME types when receiving files per OBEX with bluez
+Summary:       Disable filter for supported MIME types when receiving files per OBEX
 Version:       1.1.10
 # Stop evaluating the Release tag content (only set it) and cease including it in git tags since
 # v1.1.0, in order to satisfy the SailfishOS OBS' tar_git.
@@ -12,7 +12,6 @@ Release:       stable
 Group:         System/Base
 # Distribution: SailfishOS  # , MeeGo and maybe also other descendants of MeeGo
 Vendor:        meego
-Packager:      olf
 License:       LGPL-2.1-only
 URL:           https://github.com/Olf0/%{name}
 Source:        %{url}/archive/%{version}/%{name}-%{version}.tar.gz
@@ -38,7 +37,7 @@ Conflicts:     obexd-contentfilter-helper
 # This description section includes metadata for SailfishOS:Chum, see
 # https://github.com/sailfishos-chum/main/blob/main/Metadata.md
 %description
-%{summary} by substituting ("obsoleting") MeeGo's / SailfishOS' obexd-contentfilter-helper package, replacing its obexd-contentfilter-helperapp script with a "dummy".
+%{summary} with bluez by substituting ("obsoleting") MeeGo's / SailfishOS' obexd-contentfilter-helper package, replacing its obexd-contentfilter-helperapp script with a "dummy".
 
 %if "%{?vendor}" == "chum"
 PackageName: Disable file type filter for Bluetooth
@@ -58,7 +57,7 @@ Url:
 %endif
 
 %prep
-%setup
+%setup -q
 
 %build
 
@@ -70,3 +69,5 @@ cp usr/libexec/* %{buildroot}%{_libexecdir}/
 %defattr(0755,root,root,-)
 %{_libexecdir}/obexd-contentfilter-helperapp
 
+%changelog
+%{url}/releases
