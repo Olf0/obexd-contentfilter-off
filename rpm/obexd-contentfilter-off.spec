@@ -42,7 +42,7 @@ by substituting ("obsoleting") MeeGo's / SailfishOS' obexd-contentfilter-helper
 package, replacing its obexd-contentfilter-helperapp script with a "dummy".
 
 %if "%{?vendor}" == "chum"
-PackageName: Disable file type filter for Bluetooth
+PackageName: Bluetooth OBEX Filter off
 Type: generic
 Categories:
  - Utilities
