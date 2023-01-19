@@ -37,7 +37,9 @@ Conflicts:     obexd-contentfilter-helper
 # This description section includes metadata for SailfishOS:Chum, see
 # https://github.com/sailfishos-chum/main/blob/main/Metadata.md
 %description
-%{summary} with bluez by substituting ("obsoleting") MeeGo's / SailfishOS' obexd-contentfilter-helper package, replacing its obexd-contentfilter-helperapp script with a "dummy".
+%{summary} with
+bluez by substituting ("obsoleting") MeeGo's / SailfishOS' obexd-contentfilter-helper
+package, replacing its obexd-contentfilter-helperapp script with a "dummy".
 
 %if "%{?vendor}" == "chum"
 PackageName: Disable file type filter for Bluetooth
