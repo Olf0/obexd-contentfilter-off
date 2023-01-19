@@ -72,5 +72,5 @@ cp usr/libexec/* %{buildroot}%{_libexecdir}/
 %{_libexecdir}/obexd-contentfilter-helperapp
 
 %changelog
-* Thu Jan 01 1970 olf <Olf0@users.noreply.github.com> - 0.0.0
+* Thu Sep  9 1999 olf <Olf0@users.noreply.github.com> - 9.9.9
 - %{url}/releases
