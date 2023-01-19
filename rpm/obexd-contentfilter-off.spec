@@ -55,9 +55,7 @@ Url:
   Homepage: %{url}
   Help: %{url}/issues
   Bugtracker: %{url}/issues
-  Donation: https://openrepos.net/donate* Wed Jan 04 2* Wed Jan 04 2023 olf <Olf0@users.noreply.github.com> - 2.1.7-release6
-- Create double-fork-in-shell.md023 olf <Olf0@users.noreply.github.com> - 2.1.7-release6
-- Create double-fork-in-shell.md
+  Donation: https://openrepos.net/donate
 %endif
 
 %prep
