@@ -37,7 +37,7 @@ Conflicts:     obexd-contentfilter-helper
 # This description section includes metadata for SailfishOS:Chum, see
 # https://github.com/sailfishos-chum/main/blob/main/Metadata.md
 %description
-Disable filter for supported MIME types when receiving files per OBEX with bluez
+Disable filter for supported MIME types when receiving files via OBEX with bluez
 by substituting ("obsoleting") MeeGo's / SailfishOS' obexd-contentfilter-helper
 package, replacing its obexd-contentfilter-helperapp script with a "dummy".
 
