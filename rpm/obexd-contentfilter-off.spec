@@ -53,7 +53,9 @@ Url:
   Homepage: %{url}
   Help: %{url}/issues
   Bugtracker: %{url}/issues
-  Donation: https://openrepos.net/donate
+  Donation: https://openrepos.net/donate* Wed Jan 04 2* Wed Jan 04 2023 olf <Olf0@users.noreply.github.com> - 2.1.7-release6
+- Create double-fork-in-shell.md023 olf <Olf0@users.noreply.github.com> - 2.1.7-release6
+- Create double-fork-in-shell.md
 %endif
 
 %prep
@@ -70,5 +72,5 @@ cp usr/libexec/* %{buildroot}%{_libexecdir}/
 %{_libexecdir}/obexd-contentfilter-helperapp
 
 %changelog
-* Thu Jan 01 1970 olf <Olf0@users.noreply.github.com>
+* Thu Jan 01 1970 olf <Olf0@users.noreply.github.com> - 0.0.0
 - %{url}/releases
