@@ -15,7 +15,7 @@ Hence *obexd-contentfilter-off* provides a simple way to disable the filter for 
 * *obexd-contentfilter-off* should install and work fine on all SailfishOS and even MeeGo releases.
 * To restore the original behaviour and state of the OS, simply remove ("uninstall") this package.  Then also remove or disable [its repository](https://openrepos.net/user/14387/programs), if you have enabled it, in order to prevent automatic reinstallation of *obexd-contentfilter-off* when upgrading the OS.<br />
   **Mind that**, while *pkcon*, *zypper* / *libzypp* and consequently all tools using them (Jolla's system updater, Warehouse, Storeman etc.) satisfy all package dependencies fine when removing *obexd-contentfilter-off* (by reinstalling *obexd-contentfilter-helper* automatically), the basic *rpm* utility does not!  If one really wants to use *rpm* for removing (**not recommended**, anyway), one must execute `rpm -e --nodeps obexd-contentfilter-off && rpm -i obexd-contentfilter-helper` in order to restore the original behaviour and state without breaking the OS installation by doing so.  Also note that you need a local download of *obexd-contentfilter-helper* for that to succeed (e.g., per `pkcon download obexd-contentfilter-helper`).<br />
-  TL;DR: Do not use `rpm` for removing *obexd-contentfilter-off*!
+  TL;DR: Do not use `rpm` for removing *obexd-contentfilter-off*&#8202;__!__
 * A coarse changelog is provided per [release comments](https://github.com/Olf0/obexd-contentfilter-off/releases).
 
 #### Background
