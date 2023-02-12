@@ -41,7 +41,7 @@ Disable filter for supported MIME types when receiving files via OBEX with bluez
 by substituting ("obsoleting") MeeGo's / SailfishOS' obexd-contentfilter-helper
 package, replacing its obexd-contentfilter-helperapp script with a "dummy".
 
-%if "%{?vendor}" == "chum"
+%if 0%{?_chum}
 PackageName: Bluetooth OBEX Filter off
 Type: generic
 Categories:
