@@ -53,7 +53,7 @@ Custom:
   Repo: %{url}
 Icon: %{url}/raw/master/icon/kdebluetooth.256x256.png
 Url:
-  Homepage: %{url}
+  Homepage: https://openrepos.net/content/obexdcontentfilterolf/bluetooth-obex-filter
   Help: %{url}/issues
   Bugtracker: %{url}/issues
   Donation: https://openrepos.net/donate
