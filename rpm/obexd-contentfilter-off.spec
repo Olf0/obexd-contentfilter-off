@@ -14,6 +14,7 @@ Release:       stable
 Group:         System/Base
 # Distribution: SailfishOS  # , MeeGo and maybe also other descendants of MeeGo
 Vendor:        meego
+# Do use the same Group and Vendor as the original obexd-contentfilter-helper-0.0.2 it replaces!
 License:       LGPL-2.1-only
 URL:           https://github.com/Olf0/%{name}
 # Download URLs for gzipped tarballs at GitHub must conform to: %{url}/archive/<tag-name>/<arbitrary-string>.tar.gz
