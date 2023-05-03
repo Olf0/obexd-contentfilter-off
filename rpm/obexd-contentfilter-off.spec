@@ -9,7 +9,7 @@ Version:       1.1.12
 # The Release tag is now (ab)used to merely indicate the estimated release quality by setting it
 # to {alpha,beta,rc,stable}.  Note that no other identifiers shall be used.
 Release:       stable
-# The Group field should comprise one of the groups listed here:
+# The Group tag should comprise one of the groups listed here:
 # https://github.com/mer-tools/spectacle/blob/master/data/GROUPS
 Group:         System/Base
 # Distribution: SailfishOS  # , MeeGo and maybe also other descendants of MeeGo
