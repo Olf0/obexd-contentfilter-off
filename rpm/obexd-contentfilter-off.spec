@@ -54,7 +54,7 @@ Categories:
 DeveloperName: olf (Olf0)
 Custom:
   Repo: %{url}
-Icon: %{url}/raw/master/icon/kdebluetooth.256x256.png
+Icon: %{url}/raw/master/.icon/kdebluetooth.256x256.png
 Url:
   Homepage: https://openrepos.net/content/obexdcontentfilterolf/bluetooth-obex-filter
   Help: %{url}/issues
@@ -72,7 +72,7 @@ Url:
 
 %install
 mkdir -p %{buildroot}%{_libexecdir}
-cp usr/libexec/* %{buildroot}%{_libexecdir}/
+cp libexec/* %{buildroot}%{_libexecdir}/
 
 %files
 %defattr(0755,root,root,-)
